@@ -13,7 +13,7 @@ config_version=5
 config/name="BrickHeads"
 run/main_scene="uid://bp5w0es1txg5c"
 config/features=PackedStringArray("4.5", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://5drjupi7xigv"
 
 [display]
 
@@ -24,3 +24,4 @@ window/handheld/orientation=1
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
