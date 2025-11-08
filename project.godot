@@ -15,6 +15,12 @@ run/main_scene="uid://bp5w0es1txg5c"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=648
+window/size/viewport_height=1152
+window/handheld/orientation=1
+
 [rendering]
 
 renderer/rendering_method="mobile"
