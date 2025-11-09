@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://blq3vywntn1au"]
+
+[ext_resource type="PackedScene" uid="uid://xl83xo2o30y2" path="res://scenes/maps/city-night/buildings/buildings.tscn" id="1_ojuvk"]
+
+[node name="Buildings" instance=ExtResource("1_ojuvk")]
+image_path = "res://scenes/maps/city-night/buildings/distant/assets/"
