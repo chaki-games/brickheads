@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvq8x117xd117"]
+
+[ext_resource type="Texture2D" uid="uid://bd8d84jfme1iv" path="res://scenes/maps/city-night/assets/background.png" id="1_gknof"]
+
+[node name="LevelCityNight" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(323, 577.49994)
+scale = Vector2(1.1249999, 3.5648148)
+texture = ExtResource("1_gknof")

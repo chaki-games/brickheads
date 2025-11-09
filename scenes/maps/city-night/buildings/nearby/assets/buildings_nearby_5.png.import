@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbm0fv4a0sdy6"
-path="res://.godot/imported/buildings_intermediate_1.png-490d05c6b04072dd23ca489cdc5dec3a.ctex"
+uid="uid://b74fgi6kjdw1g"
+path="res://.godot/imported/buildings_nearby_5.png-7854d441de134f9e00582051d1936ddb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/maps/city-night/assets/buildings/intermediate/buildings_intermediate_1.png"
-dest_files=["res://.godot/imported/buildings_intermediate_1.png-490d05c6b04072dd23ca489cdc5dec3a.ctex"]
+source_file="res://scenes/maps/city-night/buildings/nearby/assets/buildings_nearby_5.png"
+dest_files=["res://.godot/imported/buildings_nearby_5.png-7854d441de134f9e00582051d1936ddb.ctex"]
 
 [params]
 

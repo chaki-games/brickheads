@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd2d66yyos6f"
-path="res://.godot/imported/buildings_intermediate_2.png-11917918224e0e90e8a946a255bf62ee.ctex"
+path="res://.godot/imported/buildings_intermediate_2.png-72969e8184715ac0a22435e2704dae9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/maps/city-night/assets/buildings/intermediate/buildings_intermediate_2.png"
-dest_files=["res://.godot/imported/buildings_intermediate_2.png-11917918224e0e90e8a946a255bf62ee.ctex"]
+source_file="res://scenes/maps/city-night/buildings/intermediate/assets/buildings_intermediate_2.png"
+dest_files=["res://.godot/imported/buildings_intermediate_2.png-72969e8184715ac0a22435e2704dae9e.ctex"]
 
 [params]
 
