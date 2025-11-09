@@ -22,12 +22,12 @@ animations = [{
 "texture": ExtResource("2_gmlin")
 }],
 "loop": true,
-"name": &"walk",
+"name": &"run",
 "speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p47bc"]
-radius = 52.0
+radius = 55.0
 height = 136.0
 
 [node name="Player" type="Area2D"]
@@ -35,8 +35,7 @@ script = ExtResource("1_gmlin")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lvxji")
-animation = &"IDLE"
-frame_progress = 0.015329076
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_p47bc")
