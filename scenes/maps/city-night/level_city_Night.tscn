@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvq8x117xd117"]
+[gd_scene load_steps=5 format=3 uid="uid://dvq8x117xd117"]
 
 [ext_resource type="Texture2D" uid="uid://bd8d84jfme1iv" path="res://scenes/maps/city-night/assets/background.png" id="1_gknof"]
-[ext_resource type="PackedScene" uid="uid://xl83xo2o30y2" path="res://scenes/maps/city-night/buildings/buildings.tscn" id="2_gmo32"]
+[ext_resource type="PackedScene" uid="uid://blq3vywntn1au" path="res://scenes/maps/city-night/buildings/distant/buildings_distant.tscn" id="2_gmo32"]
+[ext_resource type="PackedScene" uid="uid://c4xq0mur2xeoh" path="res://scenes/maps/city-night/buildings/intermediate/buildings_intermediate.tscn" id="3_c7s4p"]
+[ext_resource type="PackedScene" uid="uid://b8xs03ol4eb1g" path="res://scenes/maps/city-night/buildings/nearby/buildings_nearby.tscn" id="4_y0ec7"]
 
 [node name="LevelCityNight" type="Node2D"]
 
@@ -10,4 +12,16 @@ position = Vector2(323, 577.49994)
 scale = Vector2(1.1249999, 3.5648148)
 texture = ExtResource("1_gknof")
 
-[node name="Buildings" parent="." instance=ExtResource("2_gmo32")]
+[node name="BuildingsDistant" parent="." instance=ExtResource("2_gmo32")]
+position = Vector2(1, -311)
+speed = 30.0
+
+[node name="BuildingsIntermediate" parent="." instance=ExtResource("3_c7s4p")]
+position = Vector2(1, -311)
+speed = 75.0
+scale_factor = Vector2(1, 1)
+
+[node name="BuildingsNearby" parent="." instance=ExtResource("4_y0ec7")]
+position = Vector2(1, -311)
+speed = 300.0
+scale_factor = Vector2(0.5, 0.5)

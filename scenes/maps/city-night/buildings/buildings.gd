@@ -13,7 +13,7 @@ var sprites: Array[Sprite2D] = []
 func _ready():
 	variants = load_variants(image_path)
 	if variants.is_empty():
-		push_warning("No se encontraron imágenes en: " + image_path)
+		push_warning("not found variants: " + image_path)
 		return
 
 	var x_offset = 0.0
@@ -22,9 +22,12 @@ func _ready():
 		s.texture = variants[randi_range(0, variants.size() - 1)]
 		s.scale = scale_factor
 		add_child(s)
-		s.position = Vector2(x_offset + s.texture.get_width() * scale_factor.x / 2, screen_height / 2)
+		var x_pos = x_offset + s.texture.get_width() * scale_factor.x / 2
+		var y_pos = screen_height - (s.texture.get_height() * scale_factor.y / 2)
+		s.position = Vector2(x_pos, y_pos)
 		x_offset += s.texture.get_width() * scale_factor.x
 		sprites.append(s)
+
 
 func _process(delta: float) -> void:
 	for s in sprites:
