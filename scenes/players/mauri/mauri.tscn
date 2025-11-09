@@ -1,33 +1,78 @@
-[gd_scene load_steps=8 format=3 uid="uid://et3l2ew33vhq"]
+[gd_scene load_steps=20 format=3 uid="uid://et3l2ew33vhq"]
 
 [ext_resource type="PackedScene" uid="uid://c3nptxlqglf5m" path="res://scenes/player/player.tscn" id="1_o750a"]
-[ext_resource type="Texture2D" uid="uid://dnx5aub6g4sqk" path="res://scenes/players/mauri/assets/mauri_run_2.png" id="2_v4fet"]
-[ext_resource type="Texture2D" uid="uid://bqx5ona0gj6r0" path="res://scenes/players/mauri/assets/mauri_run_1.png" id="3_6fbw7"]
-[ext_resource type="Texture2D" uid="uid://b3v8y2uewrc74" path="res://scenes/players/mauri/assets/mauri_run_3.png" id="4_he0ad"]
-[ext_resource type="Texture2D" uid="uid://c7i5ibcnf3d0v" path="res://scenes/players/mauri/assets/mauri_run_5.png" id="5_v3x2t"]
+[ext_resource type="Texture2D" uid="uid://834dwfttqgwk" path="res://scenes/players/mauri/assets/idle/mauri_idle_1.png" id="2_co87o"]
+[ext_resource type="Texture2D" uid="uid://c7x7b10wr5l6m" path="res://scenes/players/mauri/assets/idle/mauri_idle_2.png" id="3_wom46"]
+[ext_resource type="Texture2D" uid="uid://cg8ixdvavgdfw" path="res://scenes/players/mauri/assets/idle/mauri_idle_3.png" id="4_ymapd"]
+[ext_resource type="Texture2D" uid="uid://d1gbfr4jgrlb3" path="res://scenes/players/mauri/assets/idle/mauri_idle_4.png" id="5_cnari"]
+[ext_resource type="Texture2D" uid="uid://df1l13gycpg30" path="res://scenes/players/mauri/assets/idle/mauri_idle_5.png" id="6_hksd2"]
+[ext_resource type="Texture2D" uid="uid://dgrk5b81wvoag" path="res://scenes/players/mauri/assets/idle/mauri_idle_6.png" id="7_ieks8"]
+[ext_resource type="Texture2D" uid="uid://caxyhpu8h7qn6" path="res://scenes/players/mauri/assets/idle/mauri_idle_7.png" id="8_pmp3x"]
+[ext_resource type="Texture2D" uid="uid://dd0eg6fq6i52p" path="res://scenes/players/mauri/assets/idle/mauri_idle_8.png" id="9_e4l5n"]
+[ext_resource type="Texture2D" uid="uid://u44dncyqxp0x" path="res://scenes/players/mauri/assets/idle/mauri_idle_9.png" id="10_phojy"]
+[ext_resource type="Texture2D" uid="uid://0dm8kjfmome0" path="res://scenes/players/mauri/assets/idle/mauri_idle_10.png" id="11_3sia6"]
+[ext_resource type="Texture2D" uid="uid://bb6tnvblgh2fw" path="res://scenes/players/mauri/assets/idle/mauri_idle_11.png" id="12_mml6k"]
+[ext_resource type="Texture2D" uid="uid://df8bgw2s57i06" path="res://scenes/players/mauri/assets/idle/mauri_idle_12.png" id="13_gd35b"]
+[ext_resource type="Texture2D" uid="uid://bqx5ona0gj6r0" path="res://scenes/players/mauri/assets/run/mauri_run_1.png" id="14_co87o"]
+[ext_resource type="Texture2D" uid="uid://dnx5aub6g4sqk" path="res://scenes/players/mauri/assets/run/mauri_run_2.png" id="15_wom46"]
+[ext_resource type="Texture2D" uid="uid://b3v8y2uewrc74" path="res://scenes/players/mauri/assets/run/mauri_run_3.png" id="16_ymapd"]
+[ext_resource type="Texture2D" uid="uid://c7i5ibcnf3d0v" path="res://scenes/players/mauri/assets/run/mauri_run_5.png" id="17_cnari"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8mf8c"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_v4fet")
+"texture": ExtResource("2_co87o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wom46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ymapd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cnari")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hksd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ieks8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pmp3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e4l5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_phojy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3sia6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mml6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gd35b")
 }],
 "loop": true,
-"name": &" ",
-"speed": 5.0
+"name": &"IDLE",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_6fbw7")
+"texture": ExtResource("14_co87o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_v4fet")
+"texture": ExtResource("15_wom46")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_he0ad")
+"texture": ExtResource("16_ymapd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_v3x2t")
+"texture": ExtResource("17_cnari")
 }],
 "loop": true,
 "name": &"run",
@@ -45,8 +90,8 @@ height = 272.0
 [node name="AnimatedSprite2D" parent="Player" index="0"]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_8mf8c")
-animation = &" "
-frame_progress = 0.82679975
+animation = &"IDLE"
+frame_progress = 0.5177276
 
 [node name="CollisionShape2D" parent="Player" index="1"]
 shape = SubResource("CapsuleShape2D_o750a")

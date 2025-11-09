@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://bp5w0es1txg5c"]
+[gd_scene load_steps=2 format=3 uid="uid://bp5w0es1txg5c"]
+
+[ext_resource type="PackedScene" uid="uid://et3l2ew33vhq" path="res://scenes/players/mauri/mauri.tscn" id="1_o5qli"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Mauri" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(386, 470)
