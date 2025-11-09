@@ -59,5 +59,6 @@ text = "PLAY"
 [node name="Mauri" parent="." instance=ExtResource("2_0ebjn")]
 position = Vector2(85, 706)
 scale = Vector2(1.5, 1.5)
+isIdle = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

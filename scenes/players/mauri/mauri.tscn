@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://et3l2ew33vhq"]
+[gd_scene load_steps=21 format=3 uid="uid://et3l2ew33vhq"]
 
 [ext_resource type="PackedScene" uid="uid://c3nptxlqglf5m" path="res://scenes/player/player.tscn" id="1_o750a"]
 [ext_resource type="Texture2D" uid="uid://834dwfttqgwk" path="res://scenes/players/mauri/assets/idle/mauri_idle_1.png" id="2_co87o"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dnx5aub6g4sqk" path="res://scenes/players/mauri/assets/run/mauri_run_2.png" id="15_wom46"]
 [ext_resource type="Texture2D" uid="uid://b3v8y2uewrc74" path="res://scenes/players/mauri/assets/run/mauri_run_3.png" id="16_ymapd"]
 [ext_resource type="Texture2D" uid="uid://c7i5ibcnf3d0v" path="res://scenes/players/mauri/assets/run/mauri_run_5.png" id="17_cnari"]
+[ext_resource type="Script" uid="uid://dqb3ijl34k685" path="res://scenes/players/mauri/mauri.gd" id="18_wom46"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8mf8c"]
 animations = [{
@@ -84,13 +85,13 @@ radius = 55.0
 height = 272.0
 
 [node name="Mauri" type="Node2D"]
+script = ExtResource("18_wom46")
 
 [node name="Player" parent="." instance=ExtResource("1_o750a")]
 
 [node name="AnimatedSprite2D" parent="Player" index="0"]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_8mf8c")
-animation = &"IDLE"
 frame_progress = 0.5177276
 
 [node name="CollisionShape2D" parent="Player" index="1"]
