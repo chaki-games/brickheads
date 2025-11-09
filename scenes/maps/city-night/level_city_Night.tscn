@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvq8x117xd117"]
+[gd_scene load_steps=3 format=3 uid="uid://dvq8x117xd117"]
 
 [ext_resource type="Texture2D" uid="uid://bd8d84jfme1iv" path="res://scenes/maps/city-night/assets/background.png" id="1_gknof"]
+[ext_resource type="PackedScene" uid="uid://xl83xo2o30y2" path="res://scenes/maps/city-night/buildings/buildings.tscn" id="2_gmo32"]
 
 [node name="LevelCityNight" type="Node2D"]
 
@@ -8,3 +9,5 @@
 position = Vector2(323, 577.49994)
 scale = Vector2(1.1249999, 3.5648148)
 texture = ExtResource("1_gknof")
+
+[node name="Buildings" parent="." instance=ExtResource("2_gmo32")]
