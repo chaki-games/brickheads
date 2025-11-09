@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://6pjhj7yywu5g"]
+
+[ext_resource type="PackedScene" uid="uid://dvq8x117xd117" path="res://scenes/maps/city-night/level_city_Night.tscn" id="1_x3ahk"]
+[ext_resource type="PackedScene" uid="uid://et3l2ew33vhq" path="res://scenes/players/mauri/mauri.tscn" id="2_fngju"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="LevelCityNight" parent="." instance=ExtResource("1_x3ahk")]
+
+[node name="Mauri" parent="." instance=ExtResource("2_fngju")]
+position = Vector2(125, 767)
