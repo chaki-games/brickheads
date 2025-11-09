@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3v8y2uewrc74"
-path="res://.godot/imported/mauri_run_3.png-ac1fb82fc6fbd4de103a2102bb76225e.ctex"
+uid="uid://c7x7b10wr5l6m"
+path="res://.godot/imported/mauri_idle_2.png-46b3b14553b5923888ccc866b39f8dd4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/players/mauri/assets/mauri_run_3.png"
-dest_files=["res://.godot/imported/mauri_run_3.png-ac1fb82fc6fbd4de103a2102bb76225e.ctex"]
+source_file="res://scenes/players/mauri/assets/idle/mauri_idle_2.png"
+dest_files=["res://.godot/imported/mauri_idle_2.png-46b3b14553b5923888ccc866b39f8dd4.ctex"]
 
 [params]
 
