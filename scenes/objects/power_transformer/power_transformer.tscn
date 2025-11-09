@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://brflqmgrj87bl"]
+
+[ext_resource type="PackedScene" uid="uid://dwtmcvyjhvhiy" path="res://scenes/object/object.tscn" id="1_ug2iw"]
+[ext_resource type="Texture2D" uid="uid://dsfvj88eu5g3n" path="res://scenes/objects/power_transformer/assets/power_transformer.png" id="2_t2apk"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_ug2iw")]
+
+[node name="Sprite2D" parent="Area2D" index="0"]
+scale = Vector2(1.6378214, 1.5208334)
+texture = ExtResource("2_t2apk")
+
+[node name="CollisionShape2D" parent="Area2D" index="1"]
+position = Vector2(-1, -0.5)
+
+[editable path="Area2D"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://8i630ljpua54"]
+
+[ext_resource type="PackedScene" uid="uid://dwtmcvyjhvhiy" path="res://scenes/object/object.tscn" id="1_wai3f"]
+[ext_resource type="Texture2D" uid="uid://cim58qgojxvdg" path="res://scenes/objects/ventilation_shunt/assets/ventilation_shunt.png" id="2_jlxgm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_wai3f")]
+
+[node name="Sprite2D" parent="Area2D" index="0"]
+scale = Vector2(2.1230779, 1.9714289)
+texture = ExtResource("2_jlxgm")
+
+[node name="CollisionShape2D" parent="Area2D" index="1"]
+position = Vector2(7.5, -1)
+
+[editable path="Area2D"]
