@@ -6,6 +6,9 @@ func _ready():
 	print("player ready")
 
 func _process(delta):
+	move_player(delta)
+	
+func move_player(delta):
 	var velocity = Vector2.ZERO
 	
 	if Input.is_action_pressed("left"):
