@@ -13,7 +13,7 @@ animations = [{
 "texture": ExtResource("2_v4fet")
 }],
 "loop": true,
-"name": &"IDLE",
+"name": &" ",
 "speed": 5.0
 }, {
 "frames": [{
@@ -36,7 +36,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o750a"]
 radius = 55.0
-height = 212.0
+height = 272.0
 
 [node name="Mauri" type="Node2D"]
 
@@ -45,7 +45,8 @@ height = 212.0
 [node name="AnimatedSprite2D" parent="Player" index="0"]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_8mf8c")
-frame_progress = 0.7960243
+animation = &" "
+frame_progress = 0.82679975
 
 [node name="CollisionShape2D" parent="Player" index="1"]
 shape = SubResource("CapsuleShape2D_o750a")
