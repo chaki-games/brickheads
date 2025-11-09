@@ -1,3 +1,53 @@
-[gd_scene format=3 uid="uid://et3l2ew33vhq"]
+[gd_scene load_steps=8 format=3 uid="uid://et3l2ew33vhq"]
+
+[ext_resource type="PackedScene" uid="uid://c3nptxlqglf5m" path="res://scenes/player/player.tscn" id="1_o750a"]
+[ext_resource type="Texture2D" uid="uid://dnx5aub6g4sqk" path="res://scenes/players/mauri/assets/mauri_run_2.png" id="2_v4fet"]
+[ext_resource type="Texture2D" uid="uid://bqx5ona0gj6r0" path="res://scenes/players/mauri/assets/mauri_run_1.png" id="3_6fbw7"]
+[ext_resource type="Texture2D" uid="uid://b3v8y2uewrc74" path="res://scenes/players/mauri/assets/mauri_run_3.png" id="4_he0ad"]
+[ext_resource type="Texture2D" uid="uid://c7i5ibcnf3d0v" path="res://scenes/players/mauri/assets/mauri_run_5.png" id="5_v3x2t"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8mf8c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v4fet")
+}],
+"loop": true,
+"name": &"IDLE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_6fbw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_v4fet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_he0ad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v3x2t")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o750a"]
+radius = 55.0
+height = 212.0
 
 [node name="Mauri" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_o750a")]
+
+[node name="AnimatedSprite2D" parent="Player" index="0"]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_8mf8c")
+frame_progress = 0.7960243
+
+[node name="CollisionShape2D" parent="Player" index="1"]
+shape = SubResource("CapsuleShape2D_o750a")
+
+[editable path="Player"]
