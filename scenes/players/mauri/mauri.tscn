@@ -58,7 +58,7 @@ animations = [{
 "texture": ExtResource("13_gd35b")
 }],
 "loop": true,
-"name": &" IDLE",
+"name": &"IDLE",
 "speed": 10.0
 }, {
 "frames": [{
@@ -90,7 +90,8 @@ height = 272.0
 [node name="AnimatedSprite2D" parent="Player" index="0"]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_8mf8c")
-frame_progress = 0.8701294
+animation = &"IDLE"
+frame_progress = 0.5177276
 
 [node name="CollisionShape2D" parent="Player" index="1"]
 shape = SubResource("CapsuleShape2D_o750a")
