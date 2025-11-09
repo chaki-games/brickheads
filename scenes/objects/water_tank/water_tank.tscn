@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://63d6sm74x83d"]
+
+[ext_resource type="PackedScene" uid="uid://dwtmcvyjhvhiy" path="res://scenes/object/object.tscn" id="1_c0d7u"]
+[ext_resource type="Texture2D" uid="uid://bm8fomedfnhpu" path="res://scenes/objects/water_tank/assets/water_tank.png" id="2_iwdh5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_c0d7u")]
+
+[node name="Sprite2D" parent="Area2D" index="0"]
+scale = Vector2(1.5000001, 1.3928577)
+texture = ExtResource("2_iwdh5")
+
+[node name="CollisionShape2D" parent="Area2D" index="1"]
+position = Vector2(0, 6)
+
+[editable path="Area2D"]
