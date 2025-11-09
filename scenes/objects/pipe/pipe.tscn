@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://tc0afh4pkxoo"]
+
+[ext_resource type="PackedScene" uid="uid://dwtmcvyjhvhiy" path="res://scenes/object/object.tscn" id="1_g80v4"]
+[ext_resource type="Texture2D" uid="uid://dl7xole0rmdlp" path="res://scenes/objects/pipe/assets/pipe.png" id="2_83mh7"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_g80v4")]
+
+[node name="Sprite2D" parent="Area2D" index="0"]
+position = Vector2(-9.536743e-07, -2.3841858e-07)
+scale = Vector2(1.052746, 1.077381)
+texture = ExtResource("2_83mh7")
+
+[node name="CollisionShape2D" parent="Area2D" index="1"]
+position = Vector2(3.5, 0)
+
+[editable path="Area2D"]
