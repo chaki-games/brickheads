@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://6pjhj7yywu5g"]
+[gd_scene load_steps=5 format=3 uid="uid://6pjhj7yywu5g"]
 
 [ext_resource type="Script" uid="uid://u6i3t806q0hn" path="res://scenes/levels/level_1/level_1.gd" id="1_5o1mp"]
 [ext_resource type="PackedScene" uid="uid://dvq8x117xd117" path="res://scenes/maps/city-night/level_city_Night.tscn" id="1_x3ahk"]
 [ext_resource type="PackedScene" uid="uid://et3l2ew33vhq" path="res://scenes/players/mauri/mauri.tscn" id="2_fngju"]
+[ext_resource type="AudioStream" uid="uid://qs8wvyh0lx1g" path="res://assets/brickheads.ogg" id="4_spwf2"]
 
 [node name="Level1" type="Node2D"]
 position = Vector2(0, -100)
@@ -12,3 +13,8 @@ script = ExtResource("1_5o1mp")
 
 [node name="Mauri" parent="." instance=ExtResource("2_fngju")]
 position = Vector2(125, 770)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_spwf2")
+volume_db = -5.778
+autoplay = true
